@@ -152,11 +152,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de87a3ca2e4b73f4e827affca1162f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  plat1: {fileID: 902960555336519890, guid: 805e24c5e4fec423297c5810aea1a54d, type: 3}
+  plat2: {fileID: 6207033827172151259, guid: 8a7330c25075947c8b7467d9a4393c73, type: 3}
+  plat3: {fileID: 3481097581176663788, guid: 41a75add6eb274ce29e49761899fc884, type: 3}
   seed_static: {fileID: 5817694168431340150, guid: d6f4cbaa131130e4a873b88199812a0b,
     type: 3}
   seed_jumpPad: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
-  power: 0
+  power: 10
 --- !u!1 &1982992762936792856
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 770772759721116614}
   - component: {fileID: 7222460963007234572}
   - component: {fileID: 4314753285478052172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plataforma1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 902960555336519890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.421068, y: 35.58334, z: -0.1328014}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1135630881141589960}
   - {fileID: 898372641137631908}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5197587893946399630}
   - component: {fileID: 530158810593042726}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: decoracao-04_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 898372641137631908}
   - component: {fileID: 5223706185888233789}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: decoracao-04_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1135630881141589960}
   - component: {fileID: 8060871901850075093}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plataformas-06_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1013,7 +1013,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5458,7 +5458,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6143,7 +6143,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6923,7 +6923,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -66908,7 +66908,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -67024,21 +67024,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 5540175696361951974, guid: 601261996655c3c4ab4145c34b79cc4a,
-        type: 3}
-      propertyPath: jumpForce
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5540175696361951974, guid: 601261996655c3c4ab4145c34b79cc4a,
-        type: 3}
-      propertyPath: whatIsGround.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 5540175696361951974, guid: 601261996655c3c4ab4145c34b79cc4a,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 6.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6885695038408616921, guid: 601261996655c3c4ab4145c34b79cc4a,
         type: 3}
       propertyPath: m_Sprite
@@ -67059,6 +67044,21 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5540175696361951974, guid: 601261996655c3c4ab4145c34b79cc4a,
+        type: 3}
+      propertyPath: jumpForce
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5540175696361951974, guid: 601261996655c3c4ab4145c34b79cc4a,
+        type: 3}
+      propertyPath: whatIsGround.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5540175696361951974, guid: 601261996655c3c4ab4145c34b79cc4a,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 6.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1038461728730142248, guid: 601261996655c3c4ab4145c34b79cc4a,
         type: 3}
       propertyPath: m_Offset.y
@@ -67074,6 +67074,24 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.0009444366
       objectReference: {fileID: 0}
+    - target: {fileID: 5868047005315303238, guid: 601261996655c3c4ab4145c34b79cc4a,
+        type: 3}
+      propertyPath: plat1
+      value: 
+      objectReference: {fileID: 902960555336519890, guid: 805e24c5e4fec423297c5810aea1a54d,
+        type: 3}
+    - target: {fileID: 5868047005315303238, guid: 601261996655c3c4ab4145c34b79cc4a,
+        type: 3}
+      propertyPath: plat2
+      value: 
+      objectReference: {fileID: 6207033827172151259, guid: 8a7330c25075947c8b7467d9a4393c73,
+        type: 3}
+    - target: {fileID: 5868047005315303238, guid: 601261996655c3c4ab4145c34b79cc4a,
+        type: 3}
+      propertyPath: plat3
+      value: 
+      objectReference: {fileID: 3481097581176663788, guid: 41a75add6eb274ce29e49761899fc884,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 1038461728730142248, guid: 601261996655c3c4ab4145c34b79cc4a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 601261996655c3c4ab4145c34b79cc4a, type: 3}
