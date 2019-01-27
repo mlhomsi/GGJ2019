@@ -16,12 +16,11 @@ public class PlayerThrowPlatform : MonoBehaviour
     public GameObject seed_static;
     public GameObject seed_jumpPad;
 
-    public Vector3 offset = new Vector3(0f, 0f, 0f);
     public float power;
     // Start is called before the first frame update
     void Start()
     {
-        throwTransform = transform.GetChild(1);
+        throwTransform = transform.GetChild(2);
         platforms = new List<GameObject>();
         platforms.Add(plat1); platforms.Add(plat2); platforms.Add(plat3);
     }
@@ -32,14 +31,6 @@ public class PlayerThrowPlatform : MonoBehaviour
         myPos = new Vector2(throwTransform.position.x, throwTransform.position.y);
         if (Input.GetMouseButton(0) || Input.GetMouseButton(1))
         {
-            /*Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,
-                Input.mousePosition.y, 10f));
-            Debug.Log(spawnPosition);
-
-            int platformNum = (int)Random.Range(0, 2);
-            GameObject currentPrefab = platforms[platformNum];
-            currentPlatform = Instantiate(currentPrefab, spawnPosition, transform.rotation);*/
-
             // Enables the platform
             if (hasThrown && currentPlatform == null)
             {
@@ -73,11 +64,12 @@ public class PlayerThrowPlatform : MonoBehaviour
     private void PrepareThrow()
     {
         direction = Camera.main.ScreenToWorldPoint(new Vector3
-            (Input.mousePosition.x, Input.mousePosition.y, 1));
+            (Input.mousePosition.x, Input.mousePosition.y, 10f));
         
-        direction = (direction - Camera.main.transform.localPosition);
-        Vector3.Normalize(direction);
-        rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90);
+        direction = (direction - throwTransform.position);
+        //Vector3.Normalize(direction);
+        rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
+        Debug.Log(rotation);
     }
 
     // Throws the seed in the direction the player has aimed at, determined by "PrepareThrow"

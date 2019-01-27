@@ -23,7 +23,7 @@ public class PlayerMovementPhysics : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        groundCheck = transform.GetChild(0);
+        groundCheck = transform.GetChild(1);
     }
 
     // Update is called once per frame
