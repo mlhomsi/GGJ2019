@@ -18,6 +18,7 @@ public class PlayerMovementPhysics : MonoBehaviour
 
     private Vector3 m_Velocity = Vector3.zero;
 
+    public Animator PlayerBehaviour;
 
     // Start is called before the first frame update
     void Awake()
@@ -31,6 +32,17 @@ public class PlayerMovementPhysics : MonoBehaviour
     {
         horizontalMovement = Input.GetAxisRaw("Horizontal");
         jump = Input.GetKey("space");
+
+        if(horizontalMovement == 0.0f)
+        { 
+        PlayerBehaviour.SetBool("IsWalking", false);
+            //Debug.Log(horizontalMovement);
+
+        } else 
+            {
+               PlayerBehaviour.SetBool("IsWalking", true);
+            }
+
     }
 
     private void FixedUpdate()
