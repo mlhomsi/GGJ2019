@@ -34680,6 +34680,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1265578728}
     m_Modifications:
+    - target: {fileID: 4185293566692918719, guid: 34523dc19cae90449a04f922d5afeb77,
+        type: 3}
+      propertyPath: m_Name
+      value: Bin
+      objectReference: {fileID: 0}
     - target: {fileID: 4185293566692918716, guid: 34523dc19cae90449a04f922d5afeb77,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34740,11 +34745,6 @@ PrefabInstance:
       propertyPath: playerCollider
       value: 
       objectReference: {fileID: 1478002190}
-    - target: {fileID: 4185293566692918719, guid: 34523dc19cae90449a04f922d5afeb77,
-        type: 3}
-      propertyPath: m_Name
-      value: Bin
-      objectReference: {fileID: 0}
     - target: {fileID: 5468486848848118784, guid: 34523dc19cae90449a04f922d5afeb77,
         type: 3}
       propertyPath: playerCollider
