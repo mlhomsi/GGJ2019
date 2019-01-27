@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class KillChar : MonoBehaviour
 {
+    public Collider2D playerCollider;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -27,7 +29,11 @@ public class KillChar : MonoBehaviour
     	if (col.gameObject.CompareTag("Ghost"))
     	{
     		col.transform.position = col.gameObject.GetComponent<GhostCheckpoint>().spawnPoint.transform.position;
-    	}
+            col.GetComponent<Ghost_AI>().playerTrigger = false;
+            Debug.Log(Physics2D.GetIgnoreCollision(col, playerCollider));
+            Physics2D.IgnoreCollision(col, playerCollider, false);
+
+        }
     }
 
 }

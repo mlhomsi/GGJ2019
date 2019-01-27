@@ -13,7 +13,7 @@ public class Ghost_AI : MonoBehaviour
     [Range(0, .3f)] [SerializeField] private float movementSmoothing = .05f;
 
     private Vector3 m_Velocity = Vector3.zero;
-    private bool playerTrigger = false;
+    public bool playerTrigger = false;
 
 
     // Start is called before the first frame update
