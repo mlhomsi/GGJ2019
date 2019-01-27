@@ -78,7 +78,7 @@ public class PlayerThrowPlatform : MonoBehaviour
         if (!hasThrown)
         {
             Destroy(currentPlatform);
-            projectile = (GameObject)Instantiate(seed, myPos, rotation);
+            projectile = (GameObject)Instantiate(seed, throwTransform.position, rotation);
 
             // Stops the projectile so as to not get the player's speed
             projectile.GetComponent<Rigidbody2D>().velocity = new Vector3(0f, 0f, 0f);
