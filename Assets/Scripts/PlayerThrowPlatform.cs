@@ -50,7 +50,6 @@ public class PlayerThrowPlatform : MonoBehaviour
         direction = 10 * (target - Camera.main.transform.localPosition);
         Vector3.Normalize(direction);
         rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90);
-        Debug.Log(direction);
     }
 
     // Throws the seed in the direction the player has aimed at, determined by "PrepareThrow"
