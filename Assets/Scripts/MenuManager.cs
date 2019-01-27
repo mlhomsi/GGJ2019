@@ -8,7 +8,7 @@ public class MenuManager : MonoBehaviour
     //public AudioSource Source;
     public AudioClip Select;
 
-    //public Animator IntroScene;
+    public Animator IntroScene;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     public void StartCutscene()
     {
-//        IntroScene.SetTrigger("Start");
+        IntroScene.SetTrigger("Start");
     }
 
     IEnumerator WaitFor ()
