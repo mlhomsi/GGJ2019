@@ -27,7 +27,6 @@ public class PlayerThrowPlatform : MonoBehaviour
 
     void Update()
     {
-
         myPos = new Vector2(throwTransform.position.x, throwTransform.position.y);
         if (Input.GetMouseButton(0) || Input.GetMouseButton(1))
         {
@@ -79,6 +78,7 @@ public class PlayerThrowPlatform : MonoBehaviour
         {
             Destroy(currentPlatform);
             projectile = (GameObject)Instantiate(seed, throwTransform.position, rotation);
+            projectile.GetComponent<IgnoreCollider>().IgnoreThisCollider(GetComponent<CapsuleCollider2D>());
 
             // Stops the projectile so as to not get the player's speed
             projectile.GetComponent<Rigidbody2D>().velocity = new Vector3(0f, 0f, 0f);
