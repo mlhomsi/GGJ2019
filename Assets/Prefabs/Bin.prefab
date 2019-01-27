@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4185293566692918659}
   - component: {fileID: 4185293566692918658}
   - component: {fileID: 4185293566692918717}
+  - component: {fileID: 7060141578289933200}
+  - component: {fileID: 5468486848848118784}
   - component: {fileID: 4185293566692918657}
   m_Layer: 10
   m_Name: Bin
@@ -70,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -462121309
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0331d9df764ee1946b2c2a294ffff2f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,6 +138,32 @@ MonoBehaviour:
   walkRight: 1
   playerCollider: {fileID: 0}
   movementSmoothing: 0.3
+--- !u!114 &7060141578289933200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4185293566692918719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c313ce60fb5eeb4f885defe9e6828cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
+--- !u!114 &5468486848848118784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4185293566692918719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96db076f2f2628a469eb227bdd599953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollider: {fileID: 0}
 --- !u!82 &4185293566692918657
 AudioSource:
   m_ObjectHideFlags: 0
