@@ -36,3 +36,5 @@ sysinfo.txt
 *.unitypackage
 Assets/Animations.meta
 Assets/Audio.meta
+Assets/Animations/Bun.meta
+Assets/Prefabs/Bin.prefab.meta
