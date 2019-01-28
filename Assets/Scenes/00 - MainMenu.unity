@@ -386,7 +386,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1336117705
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -11326,9 +11326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95144cd3f7c94d4b9ba4745c9f7b2b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Source: {fileID: 1954406606}
   Select: {fileID: 8300000, guid: 4ea6f59e7d6b247198ed2566d736ea45, type: 3}
-  IntroScene: {fileID: 1466733112}
 --- !u!1 &1388971034
 GameObject:
   m_ObjectHideFlags: 0
